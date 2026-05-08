@@ -1,6 +1,15 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/python-≥3.10-blue" alt="Python">
+  <img src="https://img.shields.io/github/actions/workflow/status/traromal/git-trauma/ci.yml?branch=master&label=CI" alt="CI">
+  <img src="https://img.shields.io/github/license/traromal/git-trauma" alt="License">
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen" alt="PRs welcome">
+</p>
+
 # git-trauma
 
 Emotional analysis of your git history. Classifies commits into emotions (crisis, panic, flow, frustration, relief, pride, grind, despair) and optionally narrates them via AI.
+
+![Demo](assets/demo.gif)
 
 ## Installation
 
@@ -11,7 +20,7 @@ pip install git-trauma
 Or install from source:
 
 ```bash
-git clone https://github.com/YOUR_USER/git-trauma
+git clone https://github.com/traromal/git-trauma
 cd git-trauma
 pip install .
 ```
@@ -101,9 +110,21 @@ git-trauma worst --count 10
 git-trauma --provider groq
 ```
 
+## Demo GIF
+
+Generate your own demo GIF with [VHS](https://github.com/charmbracelet/vhs):
+
+```bash
+# Install VHS (one time)
+go install github.com/charmbracelet/vhs@latest
+
+# Record the demo
+vhs demo.tape
+```
+
 ## Output
 
-Terminal table with emotion classification, intensity scores, and optional AI narratives. For the full interactive experience, use `--web` (requires `--web` flag to open a D3-based HTML report in your browser).
+Terminal table with emotion classification, intensity scores, and optional AI narratives. For the full interactive experience, use `--web` to open a D3-based HTML report in your browser.
 
 ## Project Structure
 
