@@ -9,7 +9,7 @@
 
 Emotional analysis of your git history. Classifies commits into emotions (crisis, panic, flow, frustration, relief, pride, grind, despair) and optionally narrates them via AI.
 
-![Demo](assets/demo.gif)
+![Demo](assets/demo.png)
 
 ## Installation
 
@@ -110,15 +110,12 @@ git-trauma worst --count 10
 git-trauma --provider groq
 ```
 
-## Demo GIF
+## Demo
 
-Generate your own demo GIF with [VHS](https://github.com/charmbracelet/vhs):
+Generate your own demo with [VHS](https://github.com/charmbracelet/vhs):
 
 ```bash
-# Install VHS (one time)
 go install github.com/charmbracelet/vhs@latest
-
-# Record the demo
 vhs demo.tape
 ```
 
