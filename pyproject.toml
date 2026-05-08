@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "git-trauma"
+version = "0.1.0"
+description = "Emotional analysis of your git history"
+requires-python = ">=3.10"
+dependencies = [
+    "typer>=0.12.0",
+    "rich>=13.0.0",
+    "gitpython>=3.1.40",
+    "anthropic>=0.25.0",
+    "groq>=0.9.0",
+    "python-dotenv>=1.0.0",
+    "toml>=0.10.2",
+]
+
+[project.scripts]
+git-trauma = "git_trauma.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["git_trauma"]
